@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-Ak-Ib7">
+                                <color key="backgroundColor" red="1" green="0.30971370134009224" blue="0.26640785186317417" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ol0-Ak-Ib7" secondAttribute="height" multiplier="8:5" id="3E8-zR-E6L"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9a-wk-67y">
+                                <state key="normal" title="显示目前复制的内容"/>
+                                <connections>
+                                    <action selector="logAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AmR-uU-dnd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="让我了解洛杉矶的法律框架未来科技管理看时间过得让我了解洛杉矶的法律框架未来科技管理看时间过得让我了解洛杉矶的法律框架未来科技管理看时间过得" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZm-An-yo8">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是自定义的带有MenuController的label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwC-uv-xT6" customClass="WDPasteLabel">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NwC-uv-xT6" firstAttribute="leading" secondItem="CZm-An-yo8" secondAttribute="leading" id="1AS-gL-qlH"/>
+                            <constraint firstItem="NwC-uv-xT6" firstAttribute="top" secondItem="X9a-wk-67y" secondAttribute="bottom" constant="16" id="AVv-3o-C1v"/>
+                            <constraint firstItem="X9a-wk-67y" firstAttribute="top" secondItem="Ol0-Ak-Ib7" secondAttribute="bottom" constant="10" id="IPu-pP-h3g"/>
+                            <constraint firstItem="CZm-An-yo8" firstAttribute="leading" secondItem="Ol0-Ak-Ib7" secondAttribute="leading" id="QM9-xq-M3b"/>
+                            <constraint firstItem="Ol0-Ak-Ib7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qtb-XW-qs7"/>
+                            <constraint firstItem="X9a-wk-67y" firstAttribute="centerX" secondItem="Ol0-Ak-Ib7" secondAttribute="centerX" id="WwL-Rt-ha3"/>
+                            <constraint firstItem="CZm-An-yo8" firstAttribute="centerX" secondItem="Ol0-Ak-Ib7" secondAttribute="centerX" id="ajr-wd-4gM"/>
+                            <constraint firstItem="Ol0-Ak-Ib7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="fmS-5l-zeh"/>
+                            <constraint firstItem="Ol0-Ak-Ib7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvi-Hu-cWA"/>
+                            <constraint firstItem="NwC-uv-xT6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kTJ-HD-LVG"/>
+                            <constraint firstItem="Ol0-Ak-Ib7" firstAttribute="top" secondItem="CZm-An-yo8" secondAttribute="bottom" constant="50" id="sKt-Dv-E3Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="Ol0-Ak-Ib7" id="gd9-3Q-GqK"/>
+                        <outlet property="lbl" destination="CZm-An-yo8" id="uQE-wX-K2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
